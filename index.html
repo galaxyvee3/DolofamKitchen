@@ -33,7 +33,7 @@
       font-weight: bold;
     }
     section {
-      padding: 2rem;
+      padding: 1rem;
       max-width: 600px;
       margin: auto;
     }
@@ -51,8 +51,18 @@
       font-size: 24px;
       text-shadow: 2px 2px 4px #ccc;
     }
+    h4 {
+      font-size: 24px;
+      text-shadow: 2px 2px 4px #ccc;
+      text-align: center;
+    }
     p {
       text-shadow: 2px 2px 4px #ccc;
+    }
+    #about {
+      font-size: 16px;
+      text-shadow: 2px 2px 4px #ccc;
+      text-align: center;
     }
     .menu-item {
       margin-bottom: 2rem;
@@ -73,30 +83,7 @@
       transition: transform 0.3s ease;
     }
     .menu-item:hover img {
-      transform: scale(1.05);
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      margin-top: 2rem;
-      padding: 1rem;
-      background: #fff;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-    }
-    input, select, textarea, button {
-      padding: 0.5rem;
-      font-size: 1rem;
-    }
-    button {
-      background-color: #ffc107;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #8e1c2c;
+      transform: scale(1.5);
     }
     footer {
       background: #0d1a26;
@@ -110,26 +97,26 @@
 <body>
   <header>
     <h1>Dolofam Kitchen</h1>
-    <p>Family Filipino Food</p>
+    <p>Homemade Filipino Food</p>
   </header>
 
   <nav>
-    <a href="index.html">Home</a>
-    <a href="#menu">Menu</a>
+    <a href="index.html">Menu</a>
     <a href="order.html">Order</a>
-    <a href="#hours">Hours</a>
-    <a href="#contact">Contact</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="info.html">Info</a>
   </nav>
 
   <section id="menu">
     <h2>Platters</h2>
-    <p>Each platter is served with white rice and three lumpia. You may upgrade white rice to pancit for an additional $3.</p>
+    <p>Each platter is served with white rice and two lumpia. You may upgrade white rice to pancit for an additional $3.</p>
+    <p>Please inform us about any dietary restrictions and food allergies when ordering. Ingredients may be listed upon request.</p>
     <div class="menu-item">
       <div class="menu-text">
         <h3>Bistek - $15.00</h3>
-        <p>Thinly sliced beef sirloin marinated in soy sauce and calamansi, then pan-seared with onions for a savory, citrusy flavor.</p>
+        <p>Thinly sliced ribeye steak marinated in soy sauce and lemon, then pan-seared with onions for a savory, citrusy flavor.</p>
       </div>
-      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1470&q=80" alt="Bistek">
+      <img src="pictures\bistek.jpg" alt="Bistek">
     </div>
 
     <div class="menu-item">
@@ -137,15 +124,15 @@
         <h3>Chicken Afritada - $15.00</h3>
         <p>A stew made with tender chicken, simmered in a rich tomato sauce with potatoes, carrots, and bell peppers.</p>
       </div>
-      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1470&q=80" alt="Bistek">
+      <img src="pictures\afritada.jpg" alt="Afritada">
     </div>
 
     <div class="menu-item">
       <div class="menu-text">
-        <h3>Kalbi - $15.00</h3>
+        <h3>Short Ribs - $15.00</h3>
         <p>Marinated beef short ribs grilled to perfection in a savory-sweet hawaiian barbeque sauce.</p>
       </div>
-      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1470&q=80" alt="Kalbi">
+      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1470&q=80" alt="Short Ribs">
     </div>
 
     <div class="menu-item">
@@ -153,7 +140,7 @@
         <h3>Pork Adobo - $12.00</h3>
         <p>A classic made with tender pork simmered in a rich, savory sauce of soy sauce, vinegar, garlic, bay leaves, and black pepper.</p>
       </div>
-      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1470&q=80" alt="Pork Adobo">
+      <img src="pictures\adobo.jpg" alt="Adobo">
     </div>
 
     <div class="menu-item">
@@ -161,7 +148,7 @@
         <h3>Pork Skewers - $12.00</h3>
         <p>Marinated pork slices grilled on skewers to smoky perfection, bursting with sweet, savory, and garlicky flavors.</p>
       </div>
-      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1470&q=80" alt="Pork Skewers">
+      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1470&q=80" alt="Skewers">
     </div>
 
     <div class="menu-item">
@@ -172,29 +159,31 @@
       <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1470&q=80" alt="Tocino">
     </div>
     
+    <h2>Sides</h2>    
     <div class="menu-item">
       <div class="menu-text">
-        <h3>Pancit - Small $10.00 | Large $20.00 </h3>
-        <p>A flavorful medley of stir-fried rice noodles, tender chicken, shrimp, and crisp vegetables, seasoned with soy sauce and garlic.</p>
+        <h3>Pancit - Small $10.00 | Large $15.00 </h3>
+        <p>A flavorful medley of stir-fried rice noodles, pork, and crisp vegetables, seasoned with soy sauce and garlic.</p>
+        <p>Pork may be omitted upon request.</p>
       </div>
-      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1470&q=80" alt="Pancit">
-    </div>
-
-    <h2>Sides</h2>
-    <div class="menu-item">
-      <div class="menu-text">
-        <h3>Lumpia - $6.00</h3>
-        <p>Crispy golden rolls filled with seasoned ground pork and vegetables, wrapped in a thin pastry and fried to perfection. Served with a sweet and tangy dipping sauce.</p>
-      </div>
-      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1470&q=80" alt="Lumpia">
+      <img src="pictures\pancit.jpg" alt="Pancit">
     </div>
 
     <div class="menu-item">
       <div class="menu-text">
-        <h3>Side of Kalbi - $8.00</h3>
-        <p>2 pieces of kalbi.</p>
+        <h3>Lumpia - $5.00</h3>
+        <p>Crispy golden rolls filled with seasoned ground beef and vegetables, wrapped and fried to perfection.</p>
+        <p>8 pieces of lumpia served with sweet chili dipping sauce.</p>
       </div>
-      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1470&q=80" alt="Bundle">
+      <img src="pictures\lumpia.jpg" alt="Lumpia">
+    </div>
+
+    <div class="menu-item">
+      <div class="menu-text">
+        <h3>Side of Short Ribs - $8.00</h3>
+        <p>2 pieces of short ribs.</p>
+      </div>
+      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1470&q=80" alt="Short Ribs">
     </div>
 
     <div class="menu-item">
@@ -202,22 +191,8 @@
         <h3>Side of Pork Skewers - $6.00</h3>
         <p>2 pork skewers.</p>
       </div>
-      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1470&q=80" alt="Bundle">
+      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1470&q=80" alt="Skewers">
     </div>
-  </section>
-
-  <section id="hours">
-    <h2>Hours</h2>
-    <p style="text-align: center; font-weight: bold;">Mon-Fri: 12:00pm-8:00pm</p>
-    <p style="text-align: center; font-weight: bold;">Sat-Sun: 12:00pm-8:00pm</p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p style="text-align: center;">Email: </p>
-    <p style="text-align: center;">Phone: </p>
-    <p style="text-align: center;">Facebook: </p>
-    <p style="text-align: center;">Instagram: </p>
   </section>
 
   <footer>
