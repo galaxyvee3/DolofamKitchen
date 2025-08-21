@@ -23,6 +23,8 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      max-width: 800px;
+      margin: 0 auto;
     }
     .nav-logo {
       color: white;
@@ -56,15 +58,10 @@
       font-weight: bold;
     }
     section {
-      padding: 1rem;
       max-width: 800px;
       margin: 0 auto;
     }
     h1 {
-      font-size: 36px;
-      text-shadow: 2px 2px 4px black;
-    }
-    h2 {
       font-size: 24px;
       text-shadow: 2px 2px 4px #ccc;
       text-align: center;
@@ -103,7 +100,7 @@
       text-align: center;
       transition: transform 0.3s ease;
     }
-    .menu-text h3 {
+    .menu-text h2 {
       color: #444;
       font-size: 20px;
       text-shadow: 1px 1px 2px #ccc;
@@ -176,14 +173,14 @@
   </header>
 
   <section>
-    <h2>Platters</h2>
+    <h1>Platters</h1>
     <p>Each platter is served with white rice and two lumpia. You may upgrade white rice to pancit for an additional $3.</p>
 
     <div class="menu-grid">
       <div class="menu-item">
         <img src="pictures\bistek.jpg" alt="Bistek">
         <div class="menu-text">
-          <h3>Bistek</h3>
+          <h2>Bistek</h2>
           <div class="price">$15</div>
           <p>Thinly sliced ribeye steak marinated in soy sauce and lemon, then pan-seared with onions.</p>
         </div>
@@ -192,7 +189,7 @@
       <div class="menu-item">
         <img src="pictures\afritada.jpg" alt="Afritada">
         <div class="menu-text">
-          <h3>Chicken Afritada</h3>
+          <h2>Chicken Afritada</h2>
           <div class="price">$15</div>
           <p>A stew of chicken in rich tomato sauce with potatoes, carrots, and bell peppers.</p>
         </div>
@@ -201,7 +198,7 @@
       <div class="menu-item">
         <img src="pictures\bistek.jpg" alt="Short Ribs">
         <div class="menu-text">
-          <h3>Short Ribs</h3>
+          <h2>Short Ribs</h2>
           <div class="price">$15</div>
           <p>Marinated beef short ribs grilled in a sweet-savory Hawaiian barbecue sauce.</p>
         </div>
@@ -210,7 +207,7 @@
       <div class="menu-item">
         <img src="pictures\adobo.jpg" alt="Adobo">
         <div class="menu-text">
-          <h3>Pork Adobo</h3>
+          <h2>Pork Adobo</h2>
           <div class="price">$12</div>
           <p>Tender pork simmered in soy sauce, vinegar, garlic, bay leaves, and pepper.</p>
         </div>
@@ -219,7 +216,7 @@
       <div class="menu-item">
         <img src="pictures\tocino.jpg" alt="Skewers">
         <div class="menu-text">
-          <h3>Pork Skewers</h3>
+          <h2>Pork Skewers</h2>
           <div class="price">$12</div>
           <p>Marinated pork grilled on skewers, bursting with sweet and garlicky flavors.</p>
         </div>
@@ -228,19 +225,19 @@
       <div class="menu-item">
         <img src="pictures\tocino.jpg" alt="Tocino">
         <div class="menu-text">
-          <h3>Tocino</h3>
+          <h2>Tocino</h2>
           <div class="price">$12</div>
           <p>Sweet-savory marinated pork slices pan-fried until caramelized and tender.</p>
         </div>
       </div>
     </div>
 
-    <h2>Sides</h2>
+    <h1>Sides</h1>
     <div class="menu-grid">
       <div class="menu-item">
         <img src="pictures\pancit.jpg" alt="Pancit">
         <div class="menu-text">
-          <h3>Pancit</h3>
+          <h2>Pancit</h2>
           <div class="price">Small $10 | Large $15</div>
           <p>Stir-fried rice noodles, pork, and vegetables with soy sauce and garlic.</p>
         </div>
@@ -249,7 +246,7 @@
       <div class="menu-item">
         <img src="pictures\lumpia.jpg" alt="Lumpia">
         <div class="menu-text">
-          <h3>Lumpia</h3>
+          <h2>Lumpia</h2>
           <div class="price">$5</div>
           <p>6 crispy golden rolls filled with ground beef and vegetables. Served with sweet chili sauce.</p>
         </div>
@@ -258,7 +255,7 @@
       <div class="menu-item">
         <img src="pictures\bistek.jpg" alt="Short Ribs">
         <div class="menu-text">
-          <h3>Single Short Rib</h3>
+          <h2>Single Short Rib</h2>
           <div class="price">$5</div>
           <p>1 piece of marinated and grilled short rib.</p>
         </div>
@@ -267,7 +264,7 @@
       <div class="menu-item">
         <img src="pictures\tocino.jpg" alt="Skewers">
         <div class="menu-text">
-          <h3>Single Pork Skewer</h3>
+          <h2>Single Pork Skewer</h2>
           <div class="price">$4</div>
           <p>1 skewer of marinated and grilled pork skewer.</p>
         </div>
@@ -276,15 +273,16 @@
   </section>
 
   <section>
-    <h2>Hours</h2>
+    <h1>Hours</h1>
     <p>Mon-Fri: 12:00pm-8:00pm</p>
     <p>Sat-Sun: 12:00pm-8:00pm</p>
     <br>
-    <h2>Contact Us</h2>
+    <h1>Contact Us</h1>
     <p>Email: </p>
     <p>Phone: </p>
     <p>Facebook: </p>
     <p>Instagram: </p>
+    <br>
   </section>
 
   <footer>
@@ -294,7 +292,7 @@
   <div id="modal" class="modal">
     <div class="modal-content">
       <span class="close-button">&times;</span>
-      <h3 id="modal-title" style="font-size: 24px;"></h3>
+      <h2 id="modal-title" style="font-size: 24px;"></h2>
       <div id="modal-price" style="font-size: 20px;"></div>
       <p id="modal-description"></p>
       <img id="modal-image" src="" alt="" style="max-width: 50%; border-radius: 8px;" />
@@ -312,7 +310,7 @@
   // Attach event to each menu-item
   document.querySelectorAll(".menu-item").forEach(item => {
     item.addEventListener("click", () => {
-      const title = item.querySelector("h3").innerText;
+      const title = item.querySelector("h2").innerText;
       const price = item.querySelector(".price").innerText;
       const description = item.querySelector("p").innerText;
       const image = item.querySelector("img");
