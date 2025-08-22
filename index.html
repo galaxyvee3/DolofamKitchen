@@ -17,7 +17,7 @@
       background: url('pictures/bistek.jpg') no-repeat center center;
       background-size: cover;
       color: white;
-      padding: 2rem;
+      padding: 1rem;
     }
     .header-bar {
       display: flex;
@@ -26,17 +26,12 @@
       max-width: 800px;
       margin: 0 auto;
     }
-    .nav-logo {
-      color: white;
-      font-size: 28px;
-      font-weight: bold;
-      text-decoration: none;
-      text-shadow: 2px 2px 4px black;
-      line-height: 1;
+    .nav-logo img {
+      height: 150px;
       display: inline-block;
       transition: transform 0.3s ease;
     }
-    .nav-logo:hover {
+    .nav-logo img:hover {
       transform: scale(1.1);
     }
     .order-button {
@@ -168,7 +163,9 @@
 <body>
   <header>
     <div class="header-bar">
-      <a href="index.html" class="nav-logo">Dolofam Kitchen</a>
+      <a href="index.html" class="nav-logo">
+        <img src="C:\Users\airot\Downloads\Dolofam Practice\pictures\logo.png" alt="Logo">
+      </a>
       <a href="order.html" class="order-button">Order Online</a>
     </div>
   </header>
