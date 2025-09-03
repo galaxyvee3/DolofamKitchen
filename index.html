@@ -90,7 +90,7 @@
       aspect-ratio: 1 / 1;
       width: 100%;
       max-width: 200px;
-      padding: 2rem;
+      padding: 1rem;
       border-radius: 12px;
       display: flex;
       flex-direction: column;
@@ -114,8 +114,16 @@
       transition: transform 0.3s ease;
     }
     @media (max-width: 768px) {
+      .menu-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 1rem;
+      }
       .menu-item {
-        max-width: 100%;
+        max-width: 120px;
+        padding: 1rem;
+      }
+      .menu-item img {
+        border-radius: 6px;
       }
     }
     footer {
