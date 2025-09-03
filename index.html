@@ -10,12 +10,12 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background: #fff4e6;
-      color: #2d2d2d;
+      background: #1e3549;
+      color: #c3b376;
     }
     header {
-      background: url('pictures/bistek.jpg') no-repeat center center;
-      background-size: cover;
+      background: url('pictures/banner.jpg') repeat center center;
+      background-size: contain;
       color: white;
       padding: 1rem;
     }
@@ -38,6 +38,7 @@
       background: #1e3549;
       color: #c3b376;
       border: 1.5px solid #c3b376;
+      box-shadow: 0 0 10px #c3b376;
       font-size: 20px;
       font-weight: bold;
       padding: 0.6rem 1.2rem;
@@ -60,12 +61,13 @@
     }
     h1 {
       font-size: 24px;
-      text-shadow: 2px 2px 4px #ccc;
       text-align: center;
-      margin-top: 2rem;
+      margin-top: 1rem;
+    }
+    h2 {
+      font-size: 20px;
     }
     p {
-      text-shadow: 1px 1px 2px #ccc;
       font-size: 16px;
       text-align: center;
     }
@@ -73,9 +75,9 @@
       display: none;
     }
     .menu-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-items: center;
       gap: 1rem;
     }
     .menu-text {
@@ -86,8 +88,8 @@
     }
     .menu-item {
       aspect-ratio: 1 / 1;
-      width: 25%;
-      background: #ffffff00;
+      width: 200px;
+      max-width: 200px;
       padding: 0.5rem;
       border-radius: 12px;
       display: flex;
@@ -96,12 +98,6 @@
       justify-content: space-between;
       text-align: center;
       transition: transform 0.3s ease;
-    }
-    .menu-text h2 {
-      color: #444;
-      font-size: 20px;
-      text-shadow: 1px 1px 2px #ccc;
-      margin: 0.5rem;
     }
     .menu-item p {
       display: none;
@@ -123,9 +119,10 @@
       }
     }
     footer {
-      background: #1e3549;
-      color: #c3b376;
+      background: #c3b376;
+      color: #1e3549;
       text-align: center;
+      text-shadow: 0 0 10px #1e3549;
       padding: 1rem;
     }
     .modal {
@@ -140,7 +137,7 @@
       background-color: rgba(0,0,0,0.6);
     }
     .modal-content {
-      background-color: #fff4e6;
+      background-color: #1e3549;
       margin: 1rem auto;
       padding: 1rem;
       border-radius: 10px;
@@ -172,25 +169,16 @@
   </header>
 
   <section>
-    <h1>Platters</h1>
-    <p>Each platter is served with garlic fried rice, which may be substituted with white rice upon request.</p>
+    <h1>Entrées</h1>
+    <p>Comes with Sinangag, garlic fried rice, and 4 lumpia.</p>
 
     <div class="menu-grid">
       <div class="menu-item">
         <img src="pictures\bistek.jpg" alt="Bistek">
         <div class="menu-text">
           <h2>Bistek</h2>
-          <div class="price">$15</div>
-          <p>Thinly sliced ribeye steak marinated in soy sauce and lemon, then pan-seared with onions.</p>
-        </div>
-      </div>
-
-      <div class="menu-item">
-        <img src="pictures\afritada.jpg" alt="Afritada">
-        <div class="menu-text">
-          <h2>Chicken Afritada</h2>
-          <div class="price">$15</div>
-          <p>A stew of chicken in rich tomato sauce with potatoes, carrots, and bell peppers.</p>
+          <div class="price">$18</div>
+          <p>Tender, thinly sliced beef marinated and simmered in a savory citrus sauce, topped with caramelized onion rings.</p>
         </div>
       </div>
 
@@ -199,7 +187,16 @@
         <div class="menu-text">
           <h2>Short Ribs</h2>
           <div class="price">$15</div>
-          <p>Marinated beef short ribs grilled in a sweet-savory Hawaiian barbecue sauce.</p>
+          <p>2 thinly sliced beef short ribs marinated in a sweet and savory sauce blend.</p>
+        </div>
+      </div>
+      
+      <div class="menu-item">
+        <img src="pictures\tocino.jpg" alt="Tocino">
+        <div class="menu-text">
+          <h2>Tocino</h2>
+          <div class="price">$13</div>
+          <p>Sweet-cured pork, fried until caramelized and served golden-brown.</p>
         </div>
       </div>
 
@@ -207,47 +204,38 @@
         <img src="pictures\adobo.jpg" alt="Adobo">
         <div class="menu-text">
           <h2>Pork Adobo</h2>
-          <div class="price">$12</div>
-          <p>Tender pork simmered in soy sauce, vinegar, garlic, bay leaves, and pepper.</p>
+          <div class="price">$15</div>
+          <p>Slow-braised pork in a tangy, savory soy-vinegar sauce.</p>
         </div>
       </div>
-
+      
       <div class="menu-item">
-        <img src="pictures\tocino.jpg" alt="Tocino">
+        <img src="pictures\afritada.jpg" alt="Afritada">
         <div class="menu-text">
-          <h2>Tocino</h2>
-          <div class="price">$12</div>
-          <p>Sweet-savory marinated pork slices pan-fried until caramelized and tender.</p>
+          <h2>Chicken Afritada</h2>
+          <div class="price">$16</div>
+          <p>Filipino stew with tender chicken, potatoes, and carrots in a savory tomato sauce.</p>
         </div>
       </div>
     </div>
 
-    <h1>Sides</h1>
+    <h1>A La Carte</h1>
     <div class="menu-grid">
+      <div class="menu-item">
+        <img src="pictures\lumpia.jpg" alt="Lumpia">
+        <div class="menu-text">
+          <h2>Lumpia by the Dozen</h2>
+          <div class="price">$12</div>
+          <p>Savory ground pork and minced vegetables, hand-rolled in a thin pastry wrapper. Served with a sweet chili dipping sauce. Substitute with ground beef - $15</p>
+        </div>
+      </div>
+      
       <div class="menu-item">
         <img src="pictures\pancit.jpg" alt="Pancit">
         <div class="menu-text">
           <h2>Pancit</h2>
-          <div class="price">Small $10 | Large $15</div>
-          <p>Stir-fried rice noodles, pork, and vegetables with soy sauce and garlic.</p>
-        </div>
-      </div>
-
-      <div class="menu-item">
-        <img src="pictures\lumpia.jpg" alt="Lumpia">
-        <div class="menu-text">
-          <h2>Lumpia</h2>
-          <div class="price">$5</div>
-          <p>6 crispy golden rolls filled with ground beef and vegetables. Served with sweet chili sauce.</p>
-        </div>
-      </div>
-
-      <div class="menu-item">
-        <img src="pictures\kalbi.jpg" alt="Short Ribs">
-        <div class="menu-text">
-          <h2>Single Short Rib</h2>
-          <div class="price">$5</div>
-          <p>1 piece of marinated and grilled short rib.</p>
+          <div class="price">$10</div>
+          <p>Filipino stir-fry with thin rice noodles, your choice of chicken or pork, and fresh vegetables tossed in a savory soy and citrus-infused sauce.</p>
         </div>
       </div>
     </div>
@@ -276,8 +264,8 @@
     <div class="modal-content">
       <span class="close-button">&times;</span>
       <h2 id="modal-title" style="font-size: 24px;"></h2>
-      <div id="modal-price" style="font-size: 20px;"></div>
-      <p id="modal-description"></p>
+      <div id="modal-price" style="font-size: 18px;"></div>
+      <p id="modal-description" style="font-size: 14px;"></p>
       <img id="modal-image" src="" alt="" style="max-width: 50%; border-radius: 8px;" />
     </div>
   </div>
