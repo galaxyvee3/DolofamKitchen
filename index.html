@@ -10,17 +10,15 @@
 <body>
   <header>
     <div class="header-bar">
-      <a href="index.html" class="nav-logo">
-        <img src="pictures/logo.png" alt="Logo">
-      </a>
+      <a href="index.html" class="nav-logo"><img src="pictures/logo.png" alt="Logo"></a>
       <a href="order.html" class="order-button">Order Online</a>
     </div>
   </header>
-
-  <p><img src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f1f5-1f1ed.svg" alt="Philippines Flag" width="20" style="padding-right: 10px;">
-  Family-Owned and Operated Filipino Comfort Cuisine Business
-  <img src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f1f5-1f1ed.svg" alt="Philippines Flag" width="20" style="padding-left: 10px;"></p>
-
+  <p>
+    <img src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f1f5-1f1ed.svg" alt="Philippines Flag" width="20" style="padding-right: 10px;">
+    Family-Owned and Operated Filipino Comfort Cuisine Business
+    <img src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f1f5-1f1ed.svg" alt="Philippines Flag" width="20" style="padding-left: 10px;">
+  </p>
   <section>
     <h1>Entrées</h1>
     <p>Comes with Sinangag (garlic fried rice) and 4 lumpia.</p>
@@ -93,7 +91,6 @@
       </div>
     </div>
   </section>
-
   <section>
     <h1>Hours</h1>
     <p>Mon - Wed: 6:00PM - 8:00PM</p>
@@ -103,17 +100,9 @@
     <h1>Contact Us</h1>
     <p>(808) 343-7277</p>
     <p>dolofamkitchen@gmail.com</p>
-    <p>
-      <a href="https://www.facebook.com/profile.php?id=61580130320515" aria-label="Visit us on Facebook">
-        <img src="pictures\fb.png" alt="Facebook" width="30" height="30">
-      </a>
-    </p>
+    <p><a href="https://www.facebook.com/profile.php?id=61580130320515" aria-label="Visit us on Facebook"><img src="pictures/fb.png" alt="Facebook" width="30" height="30"></a></p>
   </section>
-
-  <footer>
-    <strong>&copy; 2025 Dolofam Kitchen</strong>
-  </footer> 
-
+  <footer><strong>&copy; 2025 Dolofam Kitchen</strong></footer>
   <div id="modal" class="modal">
     <div class="modal-content">
       <span class="close-button">&times;</span>
@@ -131,7 +120,6 @@
   const modalDescription = document.getElementById("modal-description");
   const modalImage = document.getElementById("modal-image");
   const closeButton = document.querySelector(".close-button");
-
   // Attach event to each menu-item
   document.querySelectorAll(".menu-item").forEach(item => {
     item.addEventListener("click", () => {
@@ -147,17 +135,9 @@
       modal.style.display = "block";
     });
   });
-
   // Close modal when X is clicked
-  closeButton.addEventListener("click", () => {
-    modal.style.display = "none";
-  });
-
+  closeButton.addEventListener("click", () => { modal.style.display = "none"; });
   // Close modal when clicking outside the modal
-  window.addEventListener("click", (event) => {
-    if (event.target === modal) {
-      modal.style.display = "none";
-    }
-  });
+  window.addEventListener("click", (event) => { if (event.target === modal) modal.style.display = "none"; });
 </script>
 </html>
