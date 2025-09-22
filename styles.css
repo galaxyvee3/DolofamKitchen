@@ -27,8 +27,8 @@ header {
   transform: scale(1.1);
 }
 .order-button {
-  background: #1e3549;
-  color: #c3b376;
+  background: white;
+  color: #1e3549;
   border: 1.5px solid #c3b376;
   box-shadow: 0 0 10px #c3b376;
   font-size: 20px;
