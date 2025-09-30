@@ -107,6 +107,12 @@ p {
   transition: transform 0.3s ease;
 }
 @media (max-width: 768px) {
+  .special {
+    width: 100px;
+  }
+  .schedule {
+    height: 100px;
+  }
   .menu-grid {
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 0.5rem;
